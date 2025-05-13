@@ -1,0 +1,27 @@
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+# Enable Pyflakes, PyCodeStyle, and other linters
+select = ["E", "F", "I", "UP", "N", "B", "C4", "W", "S", "BLE", "FBT", "A", "C", "T", "Q", "RET", "SIM", "ARG", "ERA"]
+ignore = []
+
+# Allow autofix for all enabled rules that support it
+fix = true
+unfixable = []
+
+# Exclude files/directories
+exclude = [
+    ".git",
+    ".github",
+    "venv",
+    "__pycache__",
+    ".pytest_cache",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.ruff.mccabe]
+max-complexity = 10 
